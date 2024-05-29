@@ -1,0 +1,70 @@
+.edit-project-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  textarea,
+  select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  .team-member {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+  }
+  
+  .btn {
+    cursor: pointer;
+    padding: 8px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+  }
+  
+  .btn-danger {
+    background-color: #dc3545;
+  }
+  
+  .btn-primary:hover,
+  .btn-secondary:hover,
+  .btn-danger:hover {
+    opacity: 0.8;
+  }
+
+  .fill {
+    padding: 16px;
+  }
+  
+  .fill {
+    background-image: url('https://th.bing.com/th/id/OIF.MtwssohWZJ3qGzHQbHz1DA?w=312&h=180&c=7&r=0&o=5&pid=1.7');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: 80vh; /* Set the height to fill the viewport */
+    padding: 20px; /* Add padding as needed */
+    overflow: none; /* Enable scrolling if content overflows */
+  }

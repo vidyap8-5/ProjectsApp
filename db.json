@@ -1,0 +1,182 @@
+{
+  "Projects": [
+    {
+      "id": "1",
+      "ProjectName": "Kiosk",
+      "StartDate": "12-01-2024",
+      "EndDate": "12-04-2026",
+      "Status": "InProgress",
+      "Description": "Twrbernbe erenr,er eremr",
+      "Members": [
+        {
+          "Name": "Sentra",
+          "Role": "Admin",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": "Viewer",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": 4,
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "ProjectName": "BIS",
+      "StartDate": "12-01-2024",
+      "EndDate": "12-04-2026",
+      "Status": "Completed",
+      "Description": "Twrbernbe erenr,er eremr",
+      "Members": [
+        {
+          "Name": "Sentra",
+          "Role": "Admin",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": "Viewer",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": 4,
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        }
+      ]
+    },
+    {
+      "id": "f7a5",
+      "ProjectName": "eReg Plus",
+      "Description": "Mobile app",
+      "StartDate": "2024-05-16",
+      "EndDate": "2024-06-27",
+      "Status": "Pending",
+      "Members": [
+        {
+          "Name": "Aarthi",
+          "Role": "Admin",
+          "Email": "aa@is.com",
+          "Phone": "325545455"
+        },
+        {
+          "Name": "Sreya",
+          "Role": "Viewer",
+          "Email": "seray@id.com",
+          "Phone": "2545424"
+        }
+      ]
+    },
+    {
+      "id": "4",
+      "ProjectName": "eReg",
+      "StartDate": "12-01-2024",
+      "EndDate": "12-04-2026",
+      "Status": "Completed",
+      "Description": "Twrbernbe erenr,er eremr",
+      "Members": [
+        {
+          "Name": "Rinkal",
+          "Role": "Admin",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Vlad",
+          "Role": "Viewer",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Anu",
+          "Role": "Viewer",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        }
+      ]
+    },
+    {
+      "id": "5",
+      "ProjectName": "360",
+      "StartDate": "12-01-2024",
+      "EndDate": "12-04-2026",
+      "Status": "InProgress",
+      "Description": "Twrbernbe erenr,er eremr",
+      "Members": [
+        {
+          "Name": "Sentra",
+          "Role": "Admin",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": "Viewer",
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        },
+        {
+          "Name": "Sentra",
+          "Role": 4,
+          "Email": "xyz@dm.com",
+          "Phone": "6374319843"
+        }
+      ]
+    },
+    {
+      "id": "6",
+      "ProjectName": "Tap & Smile Plus",
+      "Description": "Mobile app",
+      "StartDate": "2024-05-16",
+      "EndDate": "2024-06-27",
+      "Status": "Pending",
+      "Members": [
+        {
+          "Name": "Aarthi",
+          "Role": "Admin",
+          "Email": "aa@is.com",
+          "Phone": "325545455"
+        },
+        {
+          "Name": "Sreya",
+          "Role": "Viewer",
+          "Email": "seray@id.com",
+          "Phone": "2545424"
+        }
+      ]
+    },
+    {
+      "id": "5aad",
+      "ProjectName": "Table Management",
+      "Description": "This is table management system",
+      "Status": "Pending",
+      "StartDate": "2024-05-08",
+      "EndDate": "2024-07-30",
+      "Members": [
+        {
+          "Name": "Lekshmi",
+          "Role": "Admin",
+          "Email": "lek@id.com",
+          "Phone": "357653765"
+        },
+        {
+          "Name": "Shibila",
+          "Role": "Viewer",
+          "Email": "shi@id.com",
+          "Phone": "676547647"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+.fill {
+  padding: 16px;
+}
+
+.fill {
+  background-image: url('https://th.bing.com/th/id/OIF.MtwssohWZJ3qGzHQbHz1DA?w=312&h=180&c=7&r=0&o=5&pid=1.7');
+  background-size: cover; /* Ensure the background image covers the entire container */
+  background-position: center; /* Center the background image */
+  height: 80vh; /* Set the height to fill the viewport */
+  padding: 20px; /* Add padding as needed */
+  overflow: none; /* Enable scrolling if content overflows */
+}

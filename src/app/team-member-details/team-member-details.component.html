@@ -1,0 +1,23 @@
+<!-- team-members.component.html -->
+<div *ngIf="teamMembers">
+    <h2>Team Members</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Role</th>
+          <th>Email</th>
+          <th>Phone</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let member of teamMembers">
+          <td>{{ member.Name }}</td>
+          <td>{{ member.Role }}</td>
+          <td>{{ member.Email }}</td>
+          <td>{{ member.Phone }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  

@@ -1,0 +1,60 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+  }
+
+  
+  .fill
+  {
+    padding: 16px;
+    background-image: url('https://th.bing.com/th/id/OIF.MtwssohWZJ3qGzHQbHz1DA?w=312&h=180&c=7&r=0&o=5&pid=1.7');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: auto; /* Set the height to fill the viewport */
+    padding: 20px; /* Add padding as needed */
+    overflow: none; /* Enable scrolling if content overflows */
+  }
+  
+  .card {
+    width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .card-header {
+    background-color: #5bc8cc;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .card-footer {
+    background-color: #f7f7f7;
+    padding: 10px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #5a6268;
+  }
+
+  .btn-danger{
+     margin-left: 20px;;
+  }

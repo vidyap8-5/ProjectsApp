@@ -1,0 +1,52 @@
+/* src/app/dashboard/dashboard.component.css */
+.dashboard-container {
+    padding: 16px;
+  }
+
+  .dashboard-container {
+    background-image: url('https://th.bing.com/th/id/OIF.MtwssohWZJ3qGzHQbHz1DA?w=312&h=180&c=7&r=0&o=5&pid=1.7');
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    height: 100vh; /* Set the height to fill the viewport */
+    padding: 20px; /* Add padding as needed */
+    overflow: auto; /* Enable scrolling if content overflows */
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+      }
+  
+      .project-card {
+        transition: transform 0.3s;
+      }
+      
+      .project-card:hover {
+        transform: scale(1.1); /* Adjust the scaling factor as needed */
+        z-index: 1; /* Ensure the enlarged card overlays other cards */
+      }
+  mat-card-actions {
+    margin-top: auto;
+  }
+
+  .ongoing {
+    background-color: rgb(191, 211, 90);
+  }
+  
+  .completed {
+    background-color: rgb(79, 130, 51);
+  }
+  
+  .pending {
+    background-color: rgb(152, 67, 67);
+  }
+
+  .mat-tooltip {
+    background-color: #ffffff;
+    color: #333333;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    max-width: 300px; /* Adjust as needed */
+  }

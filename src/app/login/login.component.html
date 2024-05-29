@@ -1,0 +1,39 @@
+
+<div class="container">
+	<div class="screen">
+		<div class="screen__content">
+			<form class="login" #loginForm="ngForm" (ngSubmit)="submit()">
+				<div class="login__field">
+					<i class="login__icon fas fa-user"></i>
+					<input type="text" class="login__input" placeholder="User name / Email" name="email" [(ngModel)]="User.email" #email="ngModel" required pattern="^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$" [class.is-invalid]="email.invalid && email.touched">
+          <div *ngIf="(email.touched|| loginForm.submitted)&& email.errors?.['required']" class="text-danger">
+            Email field is required
+          </div>
+          <div *ngIf="(email.touched|| loginForm.submitted) && email.errors?.['pattern']" class="text-danger">
+            Enter a valid e-mail
+          </div>
+        </div>
+				<div class="login__field">
+					<i class="login__icon fas fa-lock"></i>
+					<input type="password" class="login__input" placeholder="Password"name="password" [(ngModel)]="User.password" #password="ngModel"  required pattern="admin" [class.is-invalid]="password.invalid && password.touched">
+          <div *ngIf="(password.touched|| loginForm.submitted) && password.errors?.['required']" class="text-danger">
+            Password is required
+          </div>
+          <div *ngIf="(password.touched|| loginForm.submitted) && password.errors?.['pattern']" class="text-danger">
+            Password is incorrect
+          </div>
+        </div>
+				<button class="button login__submit" [disabled]="loginForm.form.invalid" routerLink="/dashboard">
+					<span class="button__text" >Log In Now</span>
+					<i class="button__icon fas fa-chevron-right"></i>
+				</button>				
+			</form>
+		</div>
+		<div class="screen__background">
+			<span class="screen__background__shape screen__background__shape4"></span>
+			<span class="screen__background__shape screen__background__shape3"></span>		
+			<span class="screen__background__shape screen__background__shape2"></span>
+			<span class="screen__background__shape screen__background__shape1"></span>
+		</div>		
+	</div>
+</div>

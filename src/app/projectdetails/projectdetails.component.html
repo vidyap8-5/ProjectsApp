@@ -1,0 +1,36 @@
+
+<app-nav-bar></app-nav-bar>
+
+<div class="fill">
+<div class="container">
+  <div class="card">
+    <div class="card-header">
+      <h2>Project Name:{{ project.ProjectName }}</h2>
+    </div>
+    <div class="card-body">
+      <p><strong>Description:</strong> {{ project.Description }}</p>
+      <p><strong>Start Date:</strong> {{ project.StartDate | date }}</p>
+      <p><strong>End Date:</strong> {{ project.EndDate | date }}</p>
+      <p><strong>Status:</strong> <span class="badge text-bg-{{ getStatusColor(project.Status) }}">{{project.Status}}</span></p>
+      
+      <div *ngIf="project.Members && project.Members.length > 0">
+        <h3>Team Members:</h3>
+        <ul>
+          <li *ngFor="let member of project.Members">
+            <span><b>{{ member.Name }} - {{ member.Role }}</b></span> <br>
+            <span>Email:{{member.Email }}, Phone {{member.Phone}}</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+      <!-- Add more project details as needed -->
+   
+    <div class="card-footer">
+      <button class="btn btn-secondary" (click)="goBack()">Back to Projects</button>
+
+      <button class="btn btn-danger" (click)="deleteProject()">Delete Project</button>
+    </div>
+  </div>
+</div>
+</div>
+

@@ -1,0 +1,59 @@
+<app-nav-bar></app-nav-bar>
+<div class="fill">
+<div class="container">
+  <form [formGroup]="projectForm" (ngSubmit)="onSubmit()">
+    <div class="card">
+      <div class="card-header">
+        <h2>Add New Project</h2>
+      </div>
+      <div class="card-body">
+        <div class="form-group">
+          <label for="name">Project Name</label>
+          <input id="name" class="form-control" formControlName="ProjectName" />
+        </div><br>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" class="form-control" formControlName="Description"></textarea>
+        </div><br>
+        <div class="form-group">
+          <label for="startDate">Start Date</label>
+          <input id="startDate" type="date" class="form-control" formControlName="StartDate" />
+        </div><br>
+        <div class="form-group">
+          <label for="endDate">End Date</label>
+          <input id="endDate" type="date" class="form-control" formControlName="EndDate" />
+        </div><br>
+        <div class="form-group">
+          <label for="status">Status</label>
+          <select id="status" class="form-control" formControlName="Status">
+            <option value="Inprogress">Inprogress</option>
+            <option value="Completed">Completed</option>
+            <option value="Pending">Pending</option>
+          </select>
+        </div><br>
+
+        <div formArrayName="Members">
+          <div *ngFor="let member of teamMembers.controls; let i=index" [formGroupName]="i" class="form-group">
+            <label for="memberName">Team Member {{ i + 1 }}</label>
+            <input id="memberName" class="form-control" formControlName="Name" placeholder="Name" /><br>
+            <label for="memberRole">Role</label>
+            <select id="memberRole" class="form-control" formControlName="Role">
+              <option value="Admin">Admin</option>
+              <option value="Viewer">Viewer</option>
+            </select><br>
+            <input class="form-control" formControlName="Email" placeholder="Email" /><br>
+            <input class="form-control" formControlName="Phone" placeholder="Phone" /><br>
+            <button type="button" class="btn btn-danger" (click)="removeTeamMember(i)">Remove</button>
+          </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-secondary" (click)="addTeamMember()">Add Team Member</button>
+      </div>
+      <br>
+      <div class="card-footer">
+        <button type="submit" class="btn btn-primary" [disabled]="!projectForm.valid">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+</div>
